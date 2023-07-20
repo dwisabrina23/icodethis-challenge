@@ -5,6 +5,7 @@ import FlightBooking from "@/pages/Flight/FlightBooking";
 import ForgotPassword from "@/pages/ForgotPassword/ForgotPassword";
 import ProfileCard from "@/pages/Profile/ProfileCard";
 import SMSShare from "@/pages/SMS/SMSShare";
+import TicketEvent from "./pages/TicketEvent/TicketEvent";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/forgot-pass" element={<ForgotPassword />} />
         <Route path="/profile" element={<ProfileCard />} />
         <Route path="/sms" element={<SMSShare />} />
+        <Route path="/ticket-event" element={<TicketEvent />} />
       </Routes>
     </BrowserRouter>
   );
