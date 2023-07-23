@@ -1,20 +1,26 @@
+// challenge id: 233
+import { FaBell, FaEnvelope } from "react-icons/fa";
+
 const ProfileCard = () => {
   return (
     <div className="flex min-h-screen items-center justify-center bg-sky-100/90">
       <div className="w-80 rounded bg-white p-5 shadow-md">
         <div className="mb-6 flex items-center justify-between">
           <div className="flex w-20 items-center justify-evenly divide-x-2 divide-gray-100 rounded-full p-2 bg-blur">
-            <i className="fa-solid fa-envelope relative inline-flex items-center px-2" style={{ color: "#c7cedb" }}>
-              <span className="sr-only">Notifications</span>
+            <div className="relative inline-flex items-center px-2" style={{ color: "#c7cedb" }}>
+              <span className="sr-only">Messgage</span>
+              <FaEnvelope />
               <div className="absolute -right-0 -top-2 inline-flex h-4 w-4 items-center justify-center rounded-full border-2 border-white bg-orange-400 text-[7px] font-bold text-white">
                 2
               </div>
-            </i>
-            <i className="fa-solid fa-bell relative inline-flex items-center px-2" style={{ color: "#c7cedb" }}>
+            </div>
+            <div className="relative inline-flex items-center px-2" style={{ color: "#c7cedb" }}>
+              <span className="sr-only">Notifications</span>
+              <FaBell />
               <div className="absolute -right-0 -top-2 inline-flex h-4 w-4 items-center justify-center rounded-full border-2 border-white bg-orange-400 text-[7px] font-bold text-white">
-                5
+                2
               </div>
-            </i>
+            </div>
           </div>
           <div className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-blur text-gray-600">+</div>
         </div>
